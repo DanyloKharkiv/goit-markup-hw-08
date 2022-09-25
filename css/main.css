@@ -43,6 +43,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 body {
@@ -61,13 +62,70 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--hover-focus-anim), visibility var(--hover-focus-anim);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-left: 40px;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+  }
+  .mobile-menu__close-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -266,14 +324,28 @@ img {
   background-color: var(--btn-hover);
 }
 
+@media screen and (max-width: 767px) {
+  .menu-navigation {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .open-mobile-menu-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+  .open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 .page-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--border-header-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .page-header__container {
@@ -282,90 +354,39 @@ img {
   justify-content: space-between;
 }
 
-.page-navigation {
-  display: flex;
-  align-items: center;
-}
-
 .logo__header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-color);
-  margin-right: 93px;
 }
 
 .logo__logo-web {
   color: var(--blue-color);
 }
 
-.menu-navigation,
-.contacts {
-  list-style: none;
-  display: flex;
-  column-gap: 50px;
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+  .page-header__container {
+    justify-content: flex-start;
+  }
+  .page-navigation {
+    display: flex;
+    align-items: center;
+  }
+  .logo__header {
+    margin-right: 88px;
+  }
+  .menu-navigation {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+    margin-right: 97px;
+  }
 }
-
-.current--page a {
-  color: var(--blue-color);
-}
-.current--page a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: auto;
-  left: auto;
-  bottom: -34px;
-  background-color: var(--blue-color);
-  border-radius: 2px;
-  height: 4px;
-  width: 100%;
-  transform: scaleX(1);
-}
-
-.menu-navigation__link {
-  position: relative;
-  color: var(--dark-color);
-  transition: color var(--hover-focus-anim);
-}
-.menu-navigation__link:hover, .menu-navigation__link:focus {
-  color: var(--blue-color);
-}
-.menu-navigation__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: auto;
-  left: auto;
-  bottom: -34px;
-  background-color: var(--blue-color);
-  border-radius: 2px;
-  height: 4px;
-  width: 0%;
-  transform: scaleX(0);
-  transition: transform var(--hover-focus-anim);
-}
-.menu-navigation__link:hover::after, .menu-navigation__link:focus::after {
-  width: 100%;
-  transform: scaleX(1);
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--grey-color);
-  fill: currentColor;
-  transition: color var(--hover-focus-anim);
-}
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--blue-color);
-}
-
-.contacts__icon {
-  margin-right: 10px;
-}
-
 .solutions {
   background-color: var(--another-grey);
   padding-top: 200px;
