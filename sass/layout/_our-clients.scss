@@ -1,0 +1,39 @@
+.five-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+}
+
+.five-sec-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.client-list-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+    fill: var(--icon-color);
+    transition: background-color var(--hover-focus-anim), fill var(--hover-focus-anim);
+
+    &:hover,
+    &:focus {
+            border-color: var(--blue-color);
+            fill: var(--blue-color);
+        }
+}

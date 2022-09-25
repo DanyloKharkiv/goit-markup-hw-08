@@ -1,0 +1,148 @@
+.address-block {
+    background: var(--another-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.page-logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-color);
+}
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.footer-contacts {
+    list-style: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.geoloc {
+    color: var(--white-color);
+}
+
+.footer-mail,
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--hover-focus-anim);
+}
+
+.footer-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-containers {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.footer-left-part {
+    margin-right: 70px;
+}
+
+.footer-join-us {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-social);
+    transition: background-color var(--hover-focus-anim), fill var(--hover-focus-anim);
+
+    &:hover,
+    &:focus {
+            background-color: var(--blue-color);
+        }
+}
+
+.footer-list-icon {
+    fill: var(--white-color);
+}
+
+.footer-contact-form {
+    margin-left: auto;
+}
+
+.footer-contact-form-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-item {
+    margin-right: 12px;
+}
+
+.contact-form-telegram {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--another-grey);
+    color: var(--white-color);
+
+    &::placeholder {
+            font-family: 'Roboto' sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 1.25;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.footer-contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px;
+    border-width: 0;
+    width: 200px;
+    height: 50px;
+}
+
+.telegram-icon {
+    fill: var(--white-color);
+    margin-left: 10px;
+}
