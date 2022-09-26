@@ -146,14 +146,12 @@
         column-gap: 50px;
     }
 
-    .contacts {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 10px;
-    }
-
     .contacts__link {
         font-size: 12px;
+
+        &:first-child {
+        margin-bottom: 10px;
+        }
     }
 
     .contacts__icon {
