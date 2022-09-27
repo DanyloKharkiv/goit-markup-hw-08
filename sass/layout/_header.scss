@@ -155,7 +155,7 @@
     }
 
     .contacts__icon {
-        margin-right: 10px;
+        margin-right: 8px;
     }
 
     .contacts-icon--mail {
@@ -177,10 +177,36 @@
         margin-right: 93px;
     }
 
-    .contacts {
-        margin-left: auto;
+  .menu-navigation,
+  .contacts {
+      list-style: none;
+      display: flex;
+      column-gap: 50px;
+
+  } 
+
+    .contacts__link {
+        font-size: 14px;
+
+    &:first-child {
+        margin-bottom: 0px;
     }
 
+}
+
+    .contacts__icon {
+        margin-right: 10px;
+    }
+
+    .contacts-icon--mail {
+        width: 16px;
+        height: 12px;
+    }
+
+    .contacts-icon--phone {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 // .page-header {
