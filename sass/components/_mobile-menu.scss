@@ -109,6 +109,7 @@
     .mobile-social__item {
         display: flex;
         align-items: center;
+        flex-basis: calc((100% - 30px) / 4);
 
         &:not(:last-child):after {
             content: "";
