@@ -151,6 +151,19 @@
     margin-left: 10px;
 }
 
+@media screen and (max-width: 767px){
+
+    .contact-form-telegram {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .contact-form-telegram {
+        width: 300px;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .footer-wrapper {

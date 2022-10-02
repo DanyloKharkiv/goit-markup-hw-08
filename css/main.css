@@ -597,6 +597,7 @@ img {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -630,7 +631,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .solutions {
-    width: 480px;
+    max-width: 480px;
+    height: 400;
     background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-mobile.jpg");
   }
 }
@@ -641,7 +643,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .solutions {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-tablet.jpg");
   }
 }
@@ -654,7 +656,8 @@ img {
   .solutions {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1600px;
+    max-width: 1600px;
+    height: 600px;
     background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-desktop.jpg");
   }
 }
@@ -701,7 +704,7 @@ img {
     text-align: center;
   }
   .our-features__icon {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -858,7 +861,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .our-team__photo-teammate {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1114,6 +1117,16 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-form-telegram {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .contact-form-telegram {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     display: flex;
