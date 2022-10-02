@@ -458,7 +458,7 @@ img {
   position: absolute;
   right: auto;
   left: auto;
-  bottom: -34px;
+  bottom: -30px;
   background-color: var(--blue-color);
   border-radius: 2px;
   height: 4px;
@@ -480,7 +480,7 @@ img {
   position: absolute;
   right: auto;
   left: auto;
-  bottom: -34px;
+  bottom: -30px;
   background-color: var(--blue-color);
   border-radius: 2px;
   height: 4px;
@@ -1325,5 +1325,13 @@ img {
   }
   .port-title-text {
     flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter {
+    margin-bottom: 50px;
+  }
+  .portfolio-list-item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */

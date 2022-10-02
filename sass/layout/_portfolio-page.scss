@@ -156,12 +156,22 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        // width: 354px;
     }
     
     .port-title-text {
         
         flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .portfolio-filter {
+        margin-bottom: 50px;
+    }
+
+    .portfolio-list-item {
+        flex-basis: calc((100% - 60px) / 3);
     }
 }
 
