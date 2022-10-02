@@ -22,6 +22,9 @@
 
     .mobile-menu__container {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
         padding-top: 48px;
         padding-left: 40px;
         padding-bottom: 48px;
@@ -55,7 +58,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin-bottom: 306px;
+        // margin-bottom: 306px;
     }
 
     .mobile-navigation__link {
@@ -75,6 +78,7 @@
     }
 
     .mobile-contacts {
+        margin-top: auto;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -82,7 +86,7 @@
         margin-bottom: 64px;
     }
 
-    .mobile-contacts__item{
+    .mobile-contacts__item:not(:last-child){
         margin-bottom: 32px;
     }
 

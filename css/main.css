@@ -105,6 +105,9 @@ img {
   }
   .mobile-menu__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
@@ -133,7 +136,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 306px;
   }
   .mobile-navigation__link {
     font-family: "Roboto";
@@ -149,13 +151,14 @@ img {
     color: var(--blue-color);
   }
   .mobile-contacts {
+    margin-top: auto;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 64px;
   }
-  .mobile-contacts__item {
+  .mobile-contacts__item:not(:last-child) {
     margin-bottom: 32px;
   }
   .mobile-contacts__phone {
@@ -1311,7 +1314,6 @@ img {
   .portfolio-list {
     list-style: none;
     display: flex;
-    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
   }
