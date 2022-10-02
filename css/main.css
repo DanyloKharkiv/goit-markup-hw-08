@@ -1328,6 +1328,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .portfolio-filter {
     margin-bottom: 50px;
   }
