@@ -42,7 +42,7 @@
 @media screen and (max-width: 767px) {
     .solutions {
         width: 480px;
-        background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-mobile.jpg");
+        background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-mobile.jpg");
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@
     (min-resolution: 2dppx) {
         .solutions {
             background-image:linear-gradient(var(--background-color), var(--background-color)),
-                url("/images/index/hero/background-mobile@2x.jpg");
+                url("../images/index/hero/background-mobile@2x.jpg");
         }
     }
 }
@@ -60,7 +60,7 @@
 
     .solutions {
         width: 768px;
-        background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-tablet.jpg");
+        background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-tablet.jpg");
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -69,7 +69,7 @@
     (min-resolution: 2dppx) {
         .solutions {
             background-image: linear-gradient(var(--background-color), var(--background-color)),
-                url("/images/index/hero/background-tablet@2x.jpg");
+                url("../images/index/hero/background-tablet@2x.jpg");
         }
     }
 }
@@ -80,7 +80,7 @@
         padding-top: 200px;
         padding-bottom: 200px;
         width: 1600px;
-        background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-desktop.jpg");
+        background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-desktop.jpg");
     }
 
      @media (min-device-pixel-ratio: 2),
@@ -89,7 +89,7 @@
     (min-resolution: 2dppx) {
         .solutions {
             background-image: linear-gradient(var(--background-color), var(--background-color)),
-                url("/images/index/hero/background-desktop@2x.jpg");
+                url("../images/index/hero/background-desktop@2x.jpg");
         }
     }
     

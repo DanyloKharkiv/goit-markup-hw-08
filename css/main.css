@@ -631,23 +631,23 @@ img {
 @media screen and (max-width: 767px) {
   .solutions {
     width: 480px;
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-mobile.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-mobile.jpg");
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .solutions {
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-mobile@2x.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .solutions {
     width: 768px;
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-tablet.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .solutions {
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-tablet@2x.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -655,12 +655,12 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     width: 1600px;
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-desktop.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-desktop.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .solutions {
-    background-image: linear-gradient(var(--background-color), var(--background-color)), url("/images/index/hero/background-desktop@2x.jpg");
+    background-image: linear-gradient(var(--background-color), var(--background-color)), url("../images/index/hero/background-desktop@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
