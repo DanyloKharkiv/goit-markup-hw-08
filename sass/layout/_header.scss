@@ -146,6 +146,18 @@
         column-gap: 50px;
     }
 
+    .menu-navigation__link {
+        &::after {
+            bottom: -38px;
+        }
+    }
+
+    .current--page a {
+        &::after {
+            bottom: -38px;
+        }
+    }
+
     .contacts__link {
         font-size: 12px;
 
@@ -184,6 +196,18 @@
       column-gap: 50px;
 
   } 
+
+  .menu-navigation__link {
+      &::after {
+          bottom: -30px;
+      }
+  }
+
+  .current--page a {
+      &::after {
+          bottom: -30px;
+      }
+  }
 
     .contacts__link {
         font-size: 14px;

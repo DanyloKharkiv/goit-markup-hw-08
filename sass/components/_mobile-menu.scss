@@ -58,7 +58,6 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        // margin-bottom: 306px;
     }
 
     .mobile-navigation__link {
@@ -127,6 +126,30 @@
 
     .mobile-social__link {
         color: var(--blue-color);
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+
+    .mobile-contacts__phone {
+        font-size: 30px;
+    }
+
+    .mobile-social  {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (min-width: 480px) {
+
+    .mobile-contacts__phone {
+        font-size: 34px;
+    }
+
+    .mobile-social {
+        flex-wrap: nowrap;
     }
 
 }

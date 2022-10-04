@@ -195,6 +195,22 @@ img {
     color: var(--blue-color);
   }
 }
+@media screen and (min-width: 320px) {
+  .mobile-contacts__phone {
+    font-size: 30px;
+  }
+  .mobile-social {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts__phone {
+    font-size: 34px;
+  }
+  .mobile-social {
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -249,11 +265,16 @@ img {
   .modal {
     width: 100%;
     max-width: 450px;
+    top: 20px;
+    transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .modal-form-title {
@@ -409,6 +430,16 @@ img {
   background-color: var(--btn-hover);
 }
 
+@media screen and (min-width: 320px) {
+  .modal-form-check-text {
+    font-size: 7px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-form-check-text {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form-title {
     line-height: 1.15;
@@ -553,6 +584,12 @@ img {
     display: flex;
     column-gap: 50px;
   }
+  .menu-navigation__link::after {
+    bottom: -38px;
+  }
+  .current--page a::after {
+    bottom: -38px;
+  }
   .contacts__link {
     font-size: 12px;
   }
@@ -581,6 +618,12 @@ img {
     list-style: none;
     display: flex;
     column-gap: 50px;
+  }
+  .menu-navigation__link::after {
+    bottom: -30px;
+  }
+  .current--page a::after {
+    bottom: -30px;
   }
   .contacts__link {
     font-size: 14px;
@@ -1168,6 +1211,7 @@ img {
   .footer-left-part {
     text-align: start;
     margin-right: 70px;
+    margin-left: 0px;
     margin-bottom: 0;
   }
   .footer-right-part {
@@ -1328,6 +1372,10 @@ img {
   .port-title-text {
     flex-grow: 1;
   }
+  .overlay {
+    padding-top: 49px;
+    padding-bottom: 77px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-section {
@@ -1339,5 +1387,8 @@ img {
   }
   .portfolio-list-item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+  .overlay {
+    padding: 63px 24px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -158,6 +158,18 @@
         }
 }
 
+@media screen and (min-width: 320px) {
+    .modal-form-check-text {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal-form-check-text {
+        font-size: 12px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
 
     .modal-form-title {
